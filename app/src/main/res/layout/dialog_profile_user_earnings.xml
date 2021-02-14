@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earning Details"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"/>
+               <EditText
+                    android:id="@+id/update_earning"
+                    style="@style/edittext_style"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:textStyle="bold"
+                    android:hint="Amount"/>
+                <EditText
+                    android:id="@+id/update_earning_address"
+                    style="@style/edittext_style"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:hint="Paypal address or Number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw"
+        style="@style/button_style"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:id="@+id/btnWithdraw"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
